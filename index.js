@@ -55,6 +55,7 @@ function createCard({ name, secondName, email }) {
   `;
 }
 
+// Функция обновления карточки
 function rerenderCard(storage) {
   users.innerHTML = '';
 
@@ -119,7 +120,7 @@ function getData(e) {
 const observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
     if (mutation.addedNodes.length || mutation.removedNodes.length) {
-      console.log('Карта USERS обновилась');
+      console.log('Карточка USERS обновилась');
       setListeners();
     }
   });
