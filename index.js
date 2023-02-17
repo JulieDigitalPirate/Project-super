@@ -133,15 +133,5 @@ observer.observe(users, {
 btn.addEventListener('click', getData);
 clear.addEventListener('click', clearLocalStorage);
 
-// Функция для отображения указанного HTML узла
-function show(el) {
-  el.style.display = 'block';
-}
-
-// Функция для скрытия указанного HTML узла
-function hide(el) {
-  el.style.display = 'none';
-}
-
 // После перезагрузки страницы подтягиваем данные из localStorage
 window.onload = rerenderCard(JSON.parse(localStorage.getItem('users')));
