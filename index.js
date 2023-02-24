@@ -135,3 +135,4 @@ clear.addEventListener('click', clearLocalStorage);
 
 // После перезагрузки страницы подтягиваем данные из localStorage
 window.onload = rerenderCard(JSON.parse(localStorage.getItem('users')));
+
